@@ -12,7 +12,7 @@ setup(
     long_description = readme,
     long_description_content_type='text/markdown',
     keywords         = ['utility', ],
-    url              = 'https://notabug.org/dugres/setux_deployers',
+    url              = 'https://notabug.org/dugres/setux_actions',
     author           = 'Louis RIVIERE',
     author_email     = 'louis@riviere.xyz',
     license          = 'MIT',

@@ -1,4 +1,4 @@
-from setux.core.deploy import Actions, Action
+from setux.core.actions import Actions, Action
 from setux.actions.user import User_
 from setux.actions.transfer import Sender
 

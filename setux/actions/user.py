@@ -2,6 +2,8 @@ from setux.core.action import Actions, Action
 
 
 class User_(Action):
+    '''Ensure User'''
+
     @property
     def label(self):
         return 'user'
@@ -40,6 +42,8 @@ class User_(Action):
 
 
 class Groups(Action):
+    '''Ensure Group'''
+
     @property
     def label(self):
         return 'groups'
@@ -54,6 +58,8 @@ class Groups(Action):
 
 
 class User(Actions):
+    '''Manage User and its Groups'''
+
     @property
     def label(self):
         return f'User {self.user}'

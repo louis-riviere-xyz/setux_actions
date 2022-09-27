@@ -3,6 +3,8 @@ from setux.core.action import Runner
 
 
 class Pinger(Runner):
+    '''Check target availability'''
+
     @property
     def labeler(self):
         return silent

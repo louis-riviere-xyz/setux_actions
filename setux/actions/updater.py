@@ -3,6 +3,8 @@ from setux.core.action import Action
 
 
 class Updater(Action):
+    '''Update a file'''
+
     @property
     def label(self):
         return f'upd {self.path}'

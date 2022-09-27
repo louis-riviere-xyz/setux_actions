@@ -2,6 +2,8 @@ from setux.core.action import Runner, Actions
 
 
 class Moduler(Runner):
+    '''Deploy a Module'''
+
     @property
     def label(self):
         return self.module
@@ -11,6 +13,8 @@ class Moduler(Runner):
 
 
 class Modules(Actions):
+    '''Deploy Modules'''
+
     @property
     def label(self):
         return f'Modules {self.name}'

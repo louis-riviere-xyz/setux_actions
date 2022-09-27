@@ -2,6 +2,8 @@ from setux.core.action import Action
 
 
 class Directory(Action):
+    '''Ensure Directory'''
+
     @property
     def label(self):
         return f'dir {self.path}'

@@ -7,7 +7,7 @@ readme = open(join(curdir, 'README.md')).read()
 
 setup(
     name             = 'setux_actions',
-    version          = '0.22.32.0',
+    version          = '0.22.39.0',
     description      = 'System deployment',
     long_description = readme,
     long_description_content_type='text/markdown',
@@ -29,10 +29,10 @@ setup(
         'Topic :: System :: Systems Administration',
         'Topic :: Utilities',
     ],
-    python_requires='>3.8',
+    python_requires='>3.9',
     install_requires = [
-        'pybrary>=0.22.28.1',
-        'setux_core>=0.22.32.0',
+        'pybrary>=0.22.30.0',
+        'setux_core>=0.22.39.0',
     ],
     packages = find_namespace_packages(
         include=['setux.*']

@@ -5,6 +5,16 @@ from setux.core.action import Action
 
 
 class Downloader(Action):
+    '''Download a file
+
+    Params:
+        url  = source
+        dest = destination path
+        name = action name
+        sudo = user
+        mode = destination mode
+    '''
+
     @property
     def label(self):
         return f'<- {self.name}'
@@ -40,6 +50,8 @@ class Downloader(Action):
 
 
 class Sender(Action):
+    '''Upload a file'''
+
     @property
     def labeler(self):
         return silent
@@ -51,7 +63,7 @@ class Sender(Action):
 
     def check(self):
         lhash = self.local.file(self.src, verbose=False).hash
-        rhash = self.target.file(self.dst, verbose=False).hash
+        rhash = self.target.file(self.dst, sudo=self.sudo, verbose=False).hash
         return rhash == lhash
 
     def deploy(self):
@@ -62,6 +74,8 @@ class Sender(Action):
 
 
 class Syncer(Action):
+    '''Sync a directory'''
+
     @property
     def label(self):
         dst = self.dst if hasattr(self, 'dst') else self.src

@@ -2,6 +2,8 @@ from setux.core.action import Actions, Action
 
 
 class hostanme(Action):
+    '''Set hostname'''
+
     @property
     def label(self):
         return 'hostname'
@@ -17,6 +19,8 @@ class hostanme(Action):
 
 
 class etc_hostanme(Action):
+    '''Set /etc/hostname'''
+
     @property
     def label(self):
         return '/etc/hostname'
@@ -35,6 +39,8 @@ class etc_hostanme(Action):
 
 
 class etc_hosts(Action):
+    '''Manage /etc/hosts'''
+
     @property
     def label(self):
         return '/etc/hosts'
@@ -56,6 +62,8 @@ class etc_hosts(Action):
 
 
 class Hostname(Actions):
+    '''Manage Host's Name'''
+
     @property
     def label(self):
         return f'hostname {self.hostname}'

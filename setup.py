@@ -7,7 +7,7 @@ readme = open(join(curdir, 'README.md')).read()
 
 setup(
     name             = 'setux_actions',
-    version          = '0.22.39.0',
+    version          = '0.22.42.0',
     description      = 'System deployment',
     long_description = readme,
     long_description_content_type='text/markdown',
